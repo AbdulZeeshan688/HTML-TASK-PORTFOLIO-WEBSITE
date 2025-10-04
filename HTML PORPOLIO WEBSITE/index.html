@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Zeeshan Mirza - Portfolio</title>
+    <!-- Tailwind CSS for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="antialiased">
+
+    <main class="min-h-screen p-4 sm:p-6 lg:p-8 flex items-center justify-center">
+        <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-12 gap-8">
+
+            <!-- ====== Left Column / Profile ====== -->
+            <div class="md:col-span-4 lg:col-span-3">
+                <div class="glass-card p-8 text-center sticky top-8">
+                    <div class="relative inline-block">
+                        <!-- === THE IMAGE HAS BEEN UPDATED TO YOUR LATEST PHOTO HERE === -->
+                        <img class="w-36 h-36 rounded-full mx-auto mb-4 border-4 border-indigo-500 shadow-lg object-cover"
+                            src="pic.jpeg" alt="Abdul Zeeshan Mirza Profile Picture">
+                        <div
+                            class="absolute bottom-4 -right-1 bg-green-500 border-4 border-[#1a202c] w-6 h-6 rounded-full flex items-center justify-center">
+                            <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                        </div>
+                    </div>
+                    <h1 class="text-3xl font-bold text-white">Abdul Zeeshan Mirza</h1>
+                    <div class="h-6 mt-1">
+                        <span id="role-rotator" class="text-indigo-400 text-lg transition-opacity duration-500"></span>
+                    </div>
+                    <div class="mt-6 flex justify-center space-x-5">
+                        <a href="mailto:abdulzeeshanmirza2020@gmail.com" class="social-icon" aria-label="Email"><i
+                                data-feather="mail"></i></a>
+                        <a href="https://github.com/zeeshanmirza2020" class="social-icon" aria-label="GitHub"
+                            target="_blank" rel="noopener"><i data-feather="github"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== Right Column / Main Content ====== -->
+            <div class="md:col-span-8 lg:col-span-9 space-y-8">
+                <!-- About Me Card -->
+                <div class="glass-card p-8 anim-fade-in">
+                    <h2 class="section-title"><i data-feather="user" class="icon-style"></i>About Me</h2>
+                    <p class="text-gray-300 leading-relaxed mt-4">
+                        I am a passionate and highly motivated student pursuing a degree in Industrial Information
+                        Technology at LAB University of Applied Sciences. As a fast learner with a foundational
+                        understanding of key programming languages, I am eager to transition my academic knowledge into
+                        real-world projects. I am adaptable, reliable, and thrive in both independent and collaborative
+                        team settings, always ready to tackle new challenges and contribute to innovative solutions.
+                    </p>
+                </div>
+
+                <!-- Education Card -->
+                <div class="glass-card p-8 anim-fade-in">
+                    <h2 class="section-title"><i data-feather="book-open" class="icon-style"></i>Education</h2>
+                    <div class="mt-6 space-y-6 relative timeline">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <p class="text-gray-400 text-sm">2025 - Present</p>
+                                <h3 class="text-lg font-semibold text-white mt-1">Bachelor of Technology, Industrial
+                                    Information Technology</h3>
+                                <p class="text-indigo-400">LAB University of Applied Sciences, Lahti</p>
+                            </div>
+                        </div>
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <p class="text-gray-400 text-sm">2022 - 2024</p>
+                                <h3 class="text-lg font-semibold text-white mt-1">FSC Intermediate in Pre-Engineering
+                                </h3>
+                                <p class="text-indigo-400">KIPS College, Layyah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Card -->
+                <div class="glass-card p-8 anim-fade-in">
+                    <h2 class="section-title"><i data-feather="code" class="icon-style"></i>Technical Skills</h2>
+                    <div class="mt-4 flex flex-wrap gap-3">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PLC Programming</span>
+                        <span class="skill-tag">SCADA Systems</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Teamwork</span>
+                    </div>
+                </div>
+
+                <!-- Projects Card -->
+                <div class="glass-card p-8 anim-fade-in">
+                    <h2 class="section-title"><i data-feather="folder" class="icon-style"></i>Projects</h2>
+                    <div
+                        class="mt-4 bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-indigo-500 transition-colors duration-300">
+                        <h3 class="text-lg font-semibold text-white">Personal Portfolio Website</h3>
+                        <p class="text-sm text-indigo-400 mb-2">My First Project</p>
+                        <p class="text-gray-300">
+                            A responsive personal portfolio built from scratch using modern web technologies. The goal
+                            was to create a clean, dynamic, and professional online presence to showcase my skills and
+                            journey into the world of technology.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="project-tech-tag">HTML</span>
+                            <span class="project-tech-tag">Tailwind CSS</span>
+                            <span class="project-tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
